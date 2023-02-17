@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	char c;
+	int c;
 
 	/*first for loop for 0-9*/
 	for (c = 0; c < 58; c++)
