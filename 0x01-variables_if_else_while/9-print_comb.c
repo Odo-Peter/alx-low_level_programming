@@ -9,7 +9,7 @@ int main(void)
 	int i;
 
 	/*The for looping proper*/
-	for (i = 48, i < 58; i++)
+	for (i = 48; i < 58; i++)
 	{
 		putchar(i);
 		putchar(',');
