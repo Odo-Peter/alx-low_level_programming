@@ -10,7 +10,8 @@ int main(void)
 	/*The for loop for the numbers being printed*/
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d\n", i);
+		printf("%d", i);
 	}
-	return(0);
+	printf("\n");
+	return (0);
 }
