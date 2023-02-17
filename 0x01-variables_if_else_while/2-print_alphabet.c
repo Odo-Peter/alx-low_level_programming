@@ -6,6 +6,8 @@
 int main(void)
 {
 	char a;
+
+	/*Comments for the for loop*/
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
