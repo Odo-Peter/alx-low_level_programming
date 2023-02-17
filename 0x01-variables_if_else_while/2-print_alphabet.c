@@ -5,11 +5,10 @@
  */
 int main(void)
 {
-	int a;
-	for (a = 'A'; a < 'Z'; a++)
+       char a;
+	for (a = 'a'; a < 'z'; a++)
 	{
-		char alphabet_small = tolower(a);
-		putchar(alphabet_small);
+		putchar(a);
 	}
 	return (0);
 }
