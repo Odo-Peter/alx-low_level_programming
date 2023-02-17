@@ -7,7 +7,8 @@
 int main(void)
 {
 	char a;
-	
+
+	/*comments for the for loop*/
 	for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
