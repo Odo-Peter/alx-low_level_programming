@@ -5,7 +5,8 @@
  */
 int main(void)
 {
-	for (int a = 'A'; a < 'Z'; a++)
+	int a;
+	for (a = 'A'; a < 'Z'; a++)
 	{
 		char alphabet_small = tolower(a);
 		putchar(alphabet_small);
