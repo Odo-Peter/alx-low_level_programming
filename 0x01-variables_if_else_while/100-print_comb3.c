@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i % 10 == 0)
 		{
-			return;
+			return (-1);
 		} else
 		{
 			if ( i < 10)
