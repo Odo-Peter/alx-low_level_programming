@@ -9,16 +9,16 @@ int main(void)
 	int i;
 
 	/*the for loop to print in the chars*/
-	for (i = 1; i < 90; i++)
+	for (i = 49; i < 48; i++)
 	{
-		if (i % 10 == 0)
+		if (i % 48 == 0)
 		{
 			return (-1);
 		} else
 		{
-			if ( i < 10)
+			if ( i < 48)
 			{
-				putchar(0);
+				putchar(48);
 				putchar(i);
 			} else if ( i > 10)
 			{
