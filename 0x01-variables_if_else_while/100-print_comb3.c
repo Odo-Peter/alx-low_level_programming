@@ -6,24 +6,15 @@
 
 int main(void)
 {
-	int i;
+	int i, j;
 
 	/*the for loop to print in the chars*/
-	for (i = 49; i < 48; i++)
+	for (i = 1; i <= 90; i++)
 	{
-		if (i % 48 == 0)
+		for (j = 1; j <= 90; j++)
 		{
-			return (-1);
-		} else
-		{
-			if ( i < 48)
-			{
-				putchar(48);
-				putchar(i);
-			} else if ( i > 10)
-			{
-				putchar(i);
-			}
+			putchar(i + '0');
+			putchar(j + '0');
 		}
 		putchar(44);
 		putchar(32);
