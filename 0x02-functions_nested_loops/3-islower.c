@@ -7,10 +7,9 @@
 
 int _islower(int c)
 {
-	c += '0';
-	/*The loop to check chars*/
 	for (c = 'A'; c <= 'z'; c++)
 	{
+		c += '0';
 		if (c > 'Z')
 		{
 			return (1);
