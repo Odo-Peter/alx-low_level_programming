@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * _islower - prints out checks for chars that lowercase
+ * Return: 1 for a lowercase char and 0 for otherwise
+ */
+
+int _islower(void)
+{
+	int i;
+	/*The loop to check chars*/
+	for (i = 65; i <= 122; i++)
+	{
+		if (_i <= 90)
+		{
+			return (0);
+		} else
+		{
+			return (1)
+		     
+}
