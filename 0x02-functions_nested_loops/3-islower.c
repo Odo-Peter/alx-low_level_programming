@@ -4,9 +4,8 @@
  * Return: 1 for a lowercase char and 0 for otherwise
  */
 
-int _islower()
+int _islower(int i)
 {
-	int i;
 	/*The loop to check chars*/
 	for (i = 65; i <= 122; i++)
 	{
