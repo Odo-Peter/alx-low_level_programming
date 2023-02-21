@@ -9,7 +9,7 @@ int _islower(int c)
 {
 	for (c = 65; c <= 122; c++)
 	{
-		char s = c;
+		char s = c + '0';
 		if (_putchar(s) > 'Z')
 		{
 			return (1);
