@@ -4,16 +4,16 @@
  * Return: 1 for a lowercase char and 0 for otherwise
  */
 
-int _islower(int i)
+int _islower(int c)
 {
-	i += '0';
+	c += '0';
 	/*The loop to check chars*/
-	for (i = 65; i <= 122; i++)
+	for (c = 'A'; c <= 'z'; c++)
 	{
-		if (_putchar(i) > _putchar(96))
+		if (c > 'Z')
 		{
 			return (1);
-		} else if (_putchar(i) < _putchar(91))
+		} else
 		{
 			return (0);
 		}
