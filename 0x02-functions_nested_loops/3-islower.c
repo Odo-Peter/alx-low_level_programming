@@ -7,13 +7,13 @@
 
 int _islower(int c)
 {
-	for (c = 'A'; c <= 'z'; c++)
+	for (c = 65; c <= 122; c++)
 	{
 		c += '0';
-		if (c > 'Z')
+		if (_putchar(c) > '`')
 		{
 			return (1);
-		} else if (c < 'Z')
+		} else if (_putchar(c) <= 'Z')
 		{
 			return (0);
 		}
