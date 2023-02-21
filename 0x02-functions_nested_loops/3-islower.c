@@ -4,7 +4,7 @@
  * Return: 1 for a lowercase char and 0 for otherwise
  */
 
-int _islower(void)
+int _islower()
 {
 	int i;
 	/*The loop to check chars*/
