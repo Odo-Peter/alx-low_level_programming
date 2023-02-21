@@ -7,10 +7,11 @@
 
 int _abs(int c)
 {
+	int a;
+	/*Some computations*/
 	if (c < 0)
-	{
-		c = c * -1;
-		_putchar(48 + c);
-	}
-	return (0);
+		a = c * -1;
+	else
+		a = c;
+	return a;
 }
