@@ -11,10 +11,10 @@ int _islower(int c)
 	/*The loop to check chars*/
 	for (c = 'A'; c <= 'z'; c++)
 	{
-		if (_putchar(c) > 'Z')
+		if (c > 'Z')
 		{
 			return (1);
-		} else if (_putchar(c) < 'Z')
+		} else if (c < 'Z')
 		{
 			return (0);
 		}
