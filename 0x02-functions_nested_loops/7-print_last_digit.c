@@ -10,9 +10,14 @@ int print_last_digit(int i)
 	int l;
 	/*Some modulus computation*/
 	if (i < 0)
+	{
 		l = (i * -1) % 10;
+		_putchar(l + '0');
+	}
 	else
+	{
 		l = i % 10;
-	_putchar(l + '0');
+		_putchar(l + '0');
+	}
 	return (l);
 }
