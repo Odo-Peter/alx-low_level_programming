@@ -9,11 +9,11 @@ int _islower(int c)
 {
 	for (c = 65; c <= 122; c++)
 	{
-		c += '0';
-		if (_putchar(c) > '`')
+		char s = c;
+		if (_putchar(s) > 'Z')
 		{
 			return (1);
-		} else if (_putchar(c) <= 'Z')
+		} else if (_putchar(s) <= 'Z')
 		{
 			return (0);
 		}
