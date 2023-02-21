@@ -6,6 +6,7 @@
 
 int _islower(int i)
 {
+	i += '0';
 	/*The loop to check chars*/
 	for (i = 65; i <= 122; i++)
 	{
