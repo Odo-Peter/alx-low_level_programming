@@ -10,10 +10,10 @@ int _islower(int c)
 	for (c = 65; c <= 122; c++)
 	{
 		char s = c + '0';
-		if (_putchar(s) > 'Z')
+		if (s > 'Z')
 		{
 			return (1);
-		} else if (_putchar(s) <= 'Z')
+		} else if (s <= 'Z')
 		{
 			return (0);
 		}
