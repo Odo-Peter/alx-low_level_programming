@@ -6,13 +6,6 @@
 
 int main(void)
 {
-	char i;
-
-	/*The for loop of the chars*/
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		_putchar(i);
-	}
-	_putchar('\n');
+	print_alphabet();
 	return (0);
 }
