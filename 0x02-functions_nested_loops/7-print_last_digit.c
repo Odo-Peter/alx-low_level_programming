@@ -9,6 +9,9 @@ int print_last_digit(int i)
 {
 	int l;
 	/*Some modulus computation*/
-	l = i % 10;
-	return (l);
+	if (i < 0)
+		l = (i * -1) % 10;
+	else
+		l = i % 10;
+	return (88);
 }
