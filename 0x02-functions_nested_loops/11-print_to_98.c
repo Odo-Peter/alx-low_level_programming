@@ -9,24 +9,25 @@
 void print_to_98(int n)
 {
 	int m = 98, i;
-	char s = ' ', c = ',';
+	char c = ',';
 	/*The loops and computation*/
 	if (n > m)
 	{
 		for (i = n; i > m; i--)
 		{
-			printf("%d %c %c\n", i, c, s);
+			printf("%d %c", i, c);
 		}
-		printf("%d", m);
+		printf("%d\n", m);
 	} else if (n == m)
 	{
-		printf("%d", n);
+		printf("%d\n", n);
 	}
 	else {
-		printf("%d %c %c", n, c, s);
+		printf("%d %c", n, c);
 		for (i = n; i < m; i++)
 		{
-			printf("%d %c %c", i, c, s);
+			printf("%d %c", i, c);
 		}
+		printf("\n");
 	}
 }
