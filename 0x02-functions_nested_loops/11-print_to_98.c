@@ -14,25 +14,25 @@ void print_to_98(int n)
 	{
 		for (i = n; i > m; i--)
 		{
-			_putchar(i + '0');
+			printf("%d", i);
 			if (i != m)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
-		_putchar(n + '0');
+		printf("%d", n);
 	} else if (n == m)
 	{
-		_putchar(n + '0');
+		printf("%d", n);
 	}
 	else {
-		_putchar(n + '0');
+		printf("%d", n);
 		_putchar(',');
 		_putchar(' ');
 		for (i = n; i < m; i++)
 		{
-			_putchar(i + '0');
+			printf("%d", i);
 			if (i != 98)
 			{
 				_putchar(',');
