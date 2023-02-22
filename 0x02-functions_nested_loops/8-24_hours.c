@@ -7,15 +7,17 @@
 void jack_bauer(void)
 {
 	int i;
+	int j;
 	/*The for loop goes below here*/
-	for (i = 0; i < 1440; i++)
+	for (i = 0; i < 24; i++)
 	{
-		int h = i / 60;
-		int m = 1 % 60;
-		/*using putchar to print the values*/
-		_putchar(h + '0');
-		_putchar(':');
-		_putchar(m + '0');
-		_putchar('\n');
+		for (j = 0; j < 60; j++)
+		{
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar('\n');
 	}
 }
