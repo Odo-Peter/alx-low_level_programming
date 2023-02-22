@@ -6,14 +6,15 @@
 
 void times_table(void)
 {
-	int i = 0, j;
+	int i = 0, j, k;
 	/*The loops goes in here*/
 	while (i < 10)
 	{
 		j = 0;
 		while (j < 10)
 		{
-			_putchar(j * 9 + '0');
+			k = j * 9;
+			_putchar(k + '0');
 			_putchar(',');
 			_putchar(' ');
 			j++;
