@@ -12,6 +12,7 @@ void jack_bauer(void)
 	{
 		int h = i / 60;
 		int m = 1 % 60;
+		/*using putchar to print the values*/
 		_putchar(h + '0');
 		_putchar(':');
 		_putchar(m + '0');
