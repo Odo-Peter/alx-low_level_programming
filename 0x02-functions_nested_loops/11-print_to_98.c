@@ -15,7 +15,7 @@ void print_to_98(int n)
 	{
 		for (i = n; i > m; i--)
 		{
-			printf("%d%c", i, c);
+			printf("%d%c ", i, c);
 		}
 		printf("%d\n", m);
 	} else if (n == m)
@@ -23,10 +23,10 @@ void print_to_98(int n)
 		printf("%d\n", n);
 	}
 	else {
-		printf("%d%c", n, c);
+		printf("%d%c ", n, c);
 		for (i = n; i < m; i++)
 		{
-			printf("%d%c", i, c);
+			printf("%d%c ", i, c);
 		}
 		printf("\n");
 	}
