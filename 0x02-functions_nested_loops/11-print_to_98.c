@@ -12,9 +12,32 @@ void print_to_98(int n)
 	/*The loops and computation*/
 	if (n > m)
 	{
-		for (i = n - 1; i > m; i--)
+		for (i = n; i > m; i--)
 		{
-			printf("%d \, \' ' %d\n", n, i);
+			_putchar(i + '0');
+			if (i != m)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar(n + '0');
+	} else if (n == m)
+	{
+		_putchar(n + '0');
+	}
+	else {
+		_putchar(n + '0');
+		_putchar(',');
+		_putchar(' ');
+		for (i = n; i < m; i++)
+		{
+			_putchar(i + '0');
+			if (i != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
