@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * times_table - prints all values that multiples of nine
@@ -7,6 +8,7 @@
 void times_table(void)
 {
 	int i = 0, j, k;
+	char c = ',';
 	/*The loops goes in here*/
 	while (i < 10)
 	{
@@ -14,13 +16,11 @@ void times_table(void)
 		while (j < 9)
 		{
 			k = j * i;
-			_putchar(k + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d%c ", k, c);
 			j++;
 		}
-		_putchar(i + '0');
-		_putchar('\n');
+		printf("%d", i);
+		printf("\n");
 		i++;
 	}
 }
