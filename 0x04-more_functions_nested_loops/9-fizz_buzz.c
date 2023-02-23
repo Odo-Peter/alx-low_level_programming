@@ -1,0 +1,22 @@
+#include <stdio.h>
+/**
+ * main - prints 1 - 100, i % 3 prints fizz, i % 5 prints buzz
+ * Return: 0 for success
+ */
+
+int main(void)
+{
+	int i;
+	/*computations and checks*/
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("%s ", "FizzBuzz");
+		else if (i % 5 == 0)
+			printf("%s ", "Buzz");
+		else if (i % 3 == 0)
+			printf("%s ", "Fizz");
+		else
+			printf("%d ", i);
+	}
+}
