@@ -10,9 +10,9 @@ void more_numbers(void)
 	/*Loops to check and prints numbers*/
 	while (i < 10)
 	{
-		for (j = 0; j <= 14; j++)
+		for (j = 000; j <= 016; j++)
 		{
-			_putchar(j);
+			_putchar(j + '0');
 		}
 		i++;
 		_putchar('\n');
