@@ -5,11 +5,9 @@
  * Return: 1 or 0 on completion
  */
 
-int _isupper(int c)
+int _isupper(char c)
 {
-	char a = c;
-	/*The conditionals below checks for c*/
-	if (a >= 65 && a <= 90)
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
