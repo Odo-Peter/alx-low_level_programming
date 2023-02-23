@@ -7,11 +7,11 @@
 
 int _isupper(int c)
 {
-	char i = c;
+	char a = c + '0', i;
 	/*The loops below checks for c*/
 	for (i = 'A'; i <= 'z'; i++)
 	{
-		if (i >= 'A' && i <= 'Z')
+		if (i >= 'A' && i <= 'Z' && i == a)
 		{
 			return (1);
 		}
