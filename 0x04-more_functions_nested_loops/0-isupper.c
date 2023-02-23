@@ -7,7 +7,7 @@
 
 int _isupper(int c)
 {
-	char a = c + '0';
+	char a = c;
 	/*The conditionals below checks for c*/
 	if (a >= 'A' && a <= 'Z')
 	{
