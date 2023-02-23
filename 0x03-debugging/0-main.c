@@ -7,9 +7,8 @@
 int main(void)
 {
 	int i;
-
+	/*The ints comes thus*/
 	i = 0;
 	positive_or_negative(i);
-
 	return (0);
 }
