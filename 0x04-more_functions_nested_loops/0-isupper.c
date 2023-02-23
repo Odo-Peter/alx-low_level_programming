@@ -7,11 +7,15 @@
 
 int _isupper(int c)
 {
-	char a = c + '0';
+	char a = c;
 	/*The conditionals below checks for c*/
-	if (a >= 65 && a <= 90)
+	if (a >= 'A' && a <= 'Z')
+	{
 		return (1);
+	}
 	else
+	{
 		return(0);
+	}
 	return (0);
 }
