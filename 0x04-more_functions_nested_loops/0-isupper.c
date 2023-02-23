@@ -9,7 +9,7 @@ int _isupper(int c)
 {
 	char a = c + '0';
 	/*The conditionals below checks for c*/
-	if (a >= 'A' && a <= 'Z')
+	if (a >= 65 && a <= 90)
 		return (1);
 	else
 		return(0);
