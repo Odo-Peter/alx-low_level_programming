@@ -5,19 +5,11 @@
  * Return: 0 or 1 at completion
  */
 
-int _isdigit(int c)
+int _isdigit(char c)
 {
-	char a = c;
-	/*the computations goes here*/
-	for (a = 0; a < 127; a++)
+	if (c >= 48 && c <= 57)
 	{
-		if (a >= 48 && a <= 57)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
 	}
+	return (0);
 }
