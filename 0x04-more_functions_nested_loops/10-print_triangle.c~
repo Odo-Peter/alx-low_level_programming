@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+ * print_triangle - prints the '#' in a triangular form
+ * @size: params passed to the function
+ * Return: 0 always
+ */
+
+void print_triangle(int size)
+{
+	if (size <= 0)
+		_putchar('\n');
+	else
+	{
+		int i = 0, j;
+		/*Some computations to check*/
+		while (i < size)
+		{
+			_putchar(' ');
+			_putchar('#');
+			_putchar('\n');
+			for (j = 0; j < i; j++)
+			{
+				_putchar(' ');
+				_putchar('#');
+			}
+			i++;
+		}
+		/*_putchar('\n');*/
+	}
+}
