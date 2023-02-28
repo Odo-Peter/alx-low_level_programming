@@ -23,6 +23,6 @@ void rev_string(char *s)
 			*s++ = *ptr;
 			*ptr-- = t;
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
