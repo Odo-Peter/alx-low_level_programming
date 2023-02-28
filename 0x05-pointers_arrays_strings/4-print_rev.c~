@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * print_rev - prints a string in reverse
+ * @s: The pointer params
+ * Return: void
+ */
+
+void print_rev(char *s)
+{
+	char *t = s;
+	/*the loop goes here*/
+	while (*s)
+	{
+		t++;
+	}
+	while (t != s)
+	{
+		t--;
+		_putchar(*t);
+	}
+	_putchar('\n');
+}
