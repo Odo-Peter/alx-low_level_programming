@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void puts2 - prints a str without the first two letters
+ * puts2 - prints a str without the first two letters
  * @str: the params of the function
  * Return: void
  */
