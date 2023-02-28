@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void reset_to_98 - sets the value of an int to 98
+ * reset_to_98 - sets the value of an int to 98
  * @n: the pointer of the function's params
  * Return: void
  */
