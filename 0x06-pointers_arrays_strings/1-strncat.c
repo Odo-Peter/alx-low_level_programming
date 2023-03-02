@@ -9,19 +9,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	while (*dest)
-	{
-		dest++;
-	}
 	int i = 0;
-	/*assigning a value to the n variable*/
-	while (*src && i < n)
-	{
-		*dest = *src;
-		dest++;
-		src++;
+	int k = 0;
+
+	/* find the offset of the null terminator in dest */
+	while (dest[i] != '\0') {
 		i++;
 	}
-	*dest = '\0';
-	return (dest);
+	/* copy the bytes from the src string there */
+	while (src[k] != '\0') {
+		dest[i] = src[k];
+		i++;
+		k++;
+	}
+	/* set the null terminator */
+	dest[i] = '\0';
+	/* return the pointer to the destination array */
+	return dest;
 }
