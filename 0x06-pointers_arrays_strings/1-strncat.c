@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		dest++;
 	}
-	n = 0;
+	int i = 0;
 	/*assigning a value to the n variable*/
 	while (*src && i < n)
 	{
