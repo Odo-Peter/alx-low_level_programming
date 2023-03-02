@@ -11,7 +11,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int k = 0;
-
 	/* find the offset of the null terminator in dest */
 	while (dest[i] != '\0')
 	{
