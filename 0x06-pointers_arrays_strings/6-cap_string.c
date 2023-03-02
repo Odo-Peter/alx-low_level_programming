@@ -7,10 +7,6 @@
 
 char *cap_string(char *s)
 {
-	if (s == NULL || *s == '\0')
-	{
-		return;
-	}
 	int i = 1;
 	/*some computations*/
 	while (*s != '\0')
