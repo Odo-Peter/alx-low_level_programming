@@ -16,15 +16,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	/* copy the bytes from the src string there */
 	while (src[k] != '\0' && k < n)
 	{
 		dest[i] = src[k];
 		i++;
 		k++;
 	}
-	/* set the null terminator */
 	dest[i] = '\0';
-	/* return the pointer to the destination array */
-	return dest;
+	return (dest);
 }
