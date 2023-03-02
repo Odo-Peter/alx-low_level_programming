@@ -13,11 +13,13 @@ char *_strncat(char *dest, char *src, int n)
 	int k = 0;
 
 	/* find the offset of the null terminator in dest */
-	while (dest[i] != '\0') {
+	while (dest[i] != '\0')
+	{
 		i++;
 	}
 	/* copy the bytes from the src string there */
-	while (src[k] != '\0') {
+	while (src[k] != '\0' && k < n)
+	{
 		dest[i] = src[k];
 		i++;
 		k++;
