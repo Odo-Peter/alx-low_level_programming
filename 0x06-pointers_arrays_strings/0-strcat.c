@@ -8,11 +8,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	while (*dest)
+	/*int i = 0, j = 0;*/
+	/*some loops goes here*/
+	while (*dest != '\0')
 	{
 		dest++;
 	}
-	while (*src)
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
