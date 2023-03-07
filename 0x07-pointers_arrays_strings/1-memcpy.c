@@ -7,12 +7,15 @@
  * Return: a pointer to the dest
  */
 
-char *_memcpy(char *dest, char *src, int n)
+char *_memcpy(void *dest, void *src, int n)
 {
 	int i;
+	char *csrc = (char *)src;
+	char *cdest = (char *)dest;
 
 	for (i = 0; i < n; i++)
 	{
-		dest[i] = src[i];
+		cdest[i] = csrc[i];
 	}
+	return (cdest);
 }
