@@ -7,7 +7,7 @@
  * Return: a pointer to the memory area
  */
 
-void *_memset(void *s, int b, int n)
+char *_memset(void *s, int b, int n)
 {
 	unsigned char *p = s;
 	/*for loop iteration*/

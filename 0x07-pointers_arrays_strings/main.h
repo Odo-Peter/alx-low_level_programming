@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
-void *_memset(void *s, int b, int n);
+char *_memset(void *s, int b, int n);
 
 #endif
