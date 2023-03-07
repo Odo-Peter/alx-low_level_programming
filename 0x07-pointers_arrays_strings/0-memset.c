@@ -10,7 +10,7 @@
 void *_memset(void *s, int b, int n)
 {
 	unsigned char *p = s;
-
+	/*for loop iteration*/
 	while (n--)
 	{
 		*p++ = (unsigned char)b;
