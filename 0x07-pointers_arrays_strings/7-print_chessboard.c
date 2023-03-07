@@ -5,7 +5,7 @@
  * Return: void
  */
 
-void print_chessboard(char *a[8][8])
+void print_chessboard(char *a[8])
 {
 	int i, j;
 
@@ -13,8 +13,11 @@ void print_chessboard(char *a[8][8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			printf("%c", *(a[i][j]));
+			printf("%c", a[i][j]);
+			if (j == 7)
+			{
+				printf('\n');
+			}
 		}
-		printf('\n');
 	}
 }
