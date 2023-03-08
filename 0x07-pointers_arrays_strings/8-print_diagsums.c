@@ -9,20 +9,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum = 0;
+	int sum1, sum2 = 0;
 	int i;
-	int *c = a;
 
 	for (i = 0; i < size; i++)
 	{
-		sum += *c;
-		c += size + 1;
+		sum1 += *(a + i * size + i);
+		sum2 += *(a + i * size + size - i - 1);
 	}
-	c = a + size - 1;
-	for (i = 0; i < size; i++)
-	{
-		sum += *c;
-		c += size - 1;
-	}
-	printf("Sum of diagonals = %d\n", sum);
+	printf("Sum of diagonals = %d\n", sum1);
+	printf("Sum of diagonals = %d\n", sum2);
 }
