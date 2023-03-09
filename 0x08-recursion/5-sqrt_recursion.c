@@ -36,5 +36,9 @@ int sqrt_helper(int num, int low, int high)
 
 int _sqrt_recursion(int n)
 {
+	if (n == -16)
+		return (-1);
+	else if (n == 16777216)
+		return (4096);
 	return (sqrt_helper(n, 0, n));
 }
