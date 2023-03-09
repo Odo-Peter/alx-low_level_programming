@@ -17,12 +17,13 @@ int sqrt_helper(int num, int low, int high)
 	}
 	mid = (low + high) / 2;
 	square = mid * mid;
-	if (square == num)
-	{
-		return (mid);
-	} else if (square > num)
+	if (square > num)
 	{
 		return (sqrt_helper(num, low, mid - 1));
+	}
+	if ((mid + 1) * (mid + 1) > num)
+	{
+		return (mid);
 	}
 	return (sqrt_helper(num, mid + 1, high));
 }
