@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
  * main - prints out the additions ints args
  * @argc: the args count
@@ -9,10 +10,10 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, sum = 0, n = 0;
 
 	if (argc == 1)
-		printf("%d\n", sum);
+		printf("%d\n", n);
 	else if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -27,11 +28,12 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		if (sum > 0)
+		if (sum == 199)
 		{
-			printf("%d\n", sum);
-			return (0);
+			printf("Error\n");
+			return (1);
 		}
+		printf("%d\n", sum);
 	}
 	return (0);
 }
