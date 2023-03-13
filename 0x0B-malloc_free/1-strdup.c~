@@ -1,0 +1,22 @@
+#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+/**
+ * _strdup - returns ptr to a duplicated string
+ * @str: the string params
+ * Return: ptr to str or NULL
+ */
+
+char *_strdup(char *str)
+{
+	char *new_str;
+
+	if (str == NULL)
+		return (NULL);
+	new_str = (char *)malloc(sizeof(str) * sizeof(int));
+	if (*str != '\0')
+	{
+		new_str = str;
+	}
+	return (new_str);
+}
