@@ -18,11 +18,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (new_str == NULL)
+		return (NULL);
 	for (i = 0; i < len + 1; i++)
 	{
 		new_str[i] = str[i];
 	}
-	if (new_str == NULL)
-		return (NULL);
 	return (new_str);
 }
