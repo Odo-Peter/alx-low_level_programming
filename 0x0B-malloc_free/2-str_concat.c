@@ -41,7 +41,6 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	c_str[t_len] = '\0';
-	}
 	if (s2 == NULL || s1 == NULL)
 	{
 		null_checker(s1, s2, c_str);
