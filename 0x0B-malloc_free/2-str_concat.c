@@ -47,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 == NULL && s2 == NULL)
 	{
-		/*null_checker(s1, s2, c_str);*/
+		null_checker(s1, s2, c_str);
 	}
 	return (c_str);
 }
@@ -81,6 +81,11 @@ char *null_checker(char *str_1, char *str_2, char *new_str)
 			new_str[i] = str_2[i];
 		}
 		new_str[strlen(str_2)] = '\0';
+	}
+	if (new_str == NULL)
+	{
+		free(new_str);
+		return(NULL);
 	}
 	return (new_str);
 }
