@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'usual commits'
+git commit -m 'tasks done'
 git push
