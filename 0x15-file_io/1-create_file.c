@@ -10,7 +10,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 	int nchars;
-	int write;
+	int writes;
 
 	if (!filename)
 		return (-1);
@@ -26,9 +26,9 @@ int create_file(const char *filename, char *text_content)
 	for (nchars = 0; text_content[nchars]; nchars++)
 		;
 
-	write = write(fd, text_content, nchars);
+	writes = write(fd, text_content, nchars);
 
-	if (write == -1)
+	if (writes == -1)
 		return (-1);
 
 	close(fd);
